@@ -1,0 +1,9 @@
+#include "SDL_mixer"
+#inc
+class Sound {
+    private:
+        Mix_Music *music = NULL;
+    public:
+        void play_start_music( Mix_Music*music  )
+
+};
