@@ -3,8 +3,9 @@
 #include "SDL/SDL_image.h"
 #include <string>
 
-#include "../Sounds/Sound.h"
-#include "../Screens/ScreenManager.h"
+#include "../SoundManager/SoundManager.h"
+#include "../ScreenManager/ScreenManager.cpp"
+
 
 //Screen attributes
 const int SCREEN_HEIGHT = 480;
@@ -36,9 +37,7 @@ void handle_return_key();
 int main( int argc, char *args[] ) {
     bool quit = false;
     ScreenManager *screenManager = new ScreenManager();
-    Sound *sound = new Sound();
-
-
+    SoundManager *soundManager = new SoundManager();
 
     if ( init() == false ) {
         return 1;
